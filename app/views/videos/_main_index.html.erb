@@ -1,0 +1,63 @@
+<div class="main-contents">
+  <div class='main-content'>
+  <p class='main-explain'>
+    超えていこう
+  </p>
+  <h2 class='main-title'>
+    知る。学ぶ。伝える。
+  </h2>
+  </div>
+  <div class='videos'>
+    <h2 class='title'>ピックアップ動画</h2>
+    <%= link_to '新規投稿動画', "#", class: "subtitle" %>
+    <ul class='video-lists'>
+      <%# <% @items.each do |item| %>
+      <%# <li class='list'> %>
+        <%# <%= link_to item_path(item.id) do %> 
+        <%# <div class='video-img-content'> %>
+          <%# <%= image_tag item.image, class: 'video-img' %>
+
+          <%# <% if item.customer %>
+              <%# <div class='sold-out'> %>
+                <%# <span>Sold Out!!</span> %>
+              <%# </div> %>
+          <%# <% end %> 
+
+        <%# </div>  %>
+        <%# <div class='video-info'> %>
+          <%# <h3 class='video-name'> %>
+            <%# <%= item.name %> 
+          <%# </h3> %>
+          <%# <div class='video-price'> %>
+            <%# <span><%= item.price %>
+          <%# </div> %>
+        <%# </div> %>
+        <%# <% end %> 
+      <%# </li> %>
+      <%# <% end %> 
+
+      <% if @videos.nil? %>
+      <li class='list'>
+        <%= link_to '#' do %>
+        <%= image_tag "https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png", class: "video-img" %>
+        <div class='video-info'>
+          <h3 class='video-name'>
+            商品を出品してね！
+          </h3>
+          <div class='video-price'>
+            <span>99999999円<br>(税込み)</span>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  </div>
+  <div class='video'>
+  </div>
+  <div class='videoa'>
+  </div>
+  <div class='videod'>
+  </div>
+</div>
